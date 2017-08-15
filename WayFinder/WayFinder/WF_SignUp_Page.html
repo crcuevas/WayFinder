@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WayFinder</title>
+<link rel="stylesheet" href="css/WF_SignIn_Stylesheet.css">
+</head>
+
+<body class ="backdrop">
+
+<!-- Header -->
+<header>
+  <nav class="menu">
+    <ul>
+      <li class="menu"><a href="">Home</a></li>
+      <li class="menu"><a href="Destinations.html">Destinations</a></li>
+      <li class="menu"><a href="">Packages</a></li>
+    </ul>
+  </nav>
+  <div class="dropdown">
+    <button class="dropbtn">Acount</button>
+    <div class="dropdown-content"> <a href="#">Sign In</a> <a href="#">Sign Up</a> <a href="#">My Plan</a> </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+
+<main>
+  <div class="div1">
+    <p> If you’re ready to see the world and be left speechless, we welcome you to come on a journey with WayFinder.</p>
+    <br>
+    <!-- Sign Up Button -->
+    <button id="popup_button" onclick="openPopupMenu()"><u>Sign Up</u></button>
+    <!-- End of Sign Up Button --> 
+  </div>
+  <!--- Popup Form -->
+  
+  <div id="popup_bg"> <!-- Popup Form makes background darker -->
+    
+    <div id="popup_main_div"> 
+      <!-- Close Popup Form Button -->
+      <div id="close_popup_div" onClick="closePopupMenu()" title="Close this popup">
+        <button id="close_button" onclick="closeWin()">X</button>
+      </div>
+      
+      <!-- Form -->
+      
+      <form>
+        <label for="FirstName">First Name:</label>
+        <input type="First Name">
+        <label for="LastName">Last Name:</label>
+        <input type="LastName">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email">
+        <label for= "password">Password:</label>
+        <input type="password">
+        <br>
+        <label for="checkbox"></label>
+        <br>
+        <input type="checkbox">
+        I would like to sign up for Wayfinder newsletter.<br>
+        <button type="submit" class="btn-login" onClick="window.location.href='Destinations.html'">Login</button>
+      </form>
+      
+      <!-- End of form --> 
+    </div>
+  </div>
+  <!-- End of Popup Form --> 
+  
+</main>
+
+<!-- End of Main Content -->
+
+<footer>Copyright © 2017 WayFare Inc.</footer>
+<!-- Footer --> 
+
+<!-- Script for Popup Menu --> 
+
+<script type="text/javascript">
+	var popupDiv= document.getElementById("popup_bg");
+	
+	function openPopupMenu() {
+		popupDiv.style.display="block";
+	}
+	
+	function closePopupMenu () {
+		popupDiv.style.display="none";
+		
+	}	
+	</script> 
+<!-- End Script for Popup Menu -->
+
+</body>
+</html>
